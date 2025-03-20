@@ -12,13 +12,13 @@
     <div class="search">
         <input type="text" placeholder="enter city name"
         spellcheck="false">
-        <button><search><img src="./images/icons8-search-48.png"></search></button>
+        <button><search><img src="icons8-search-48.png"></search></button>
     </div>
     <div class="error">
         <p>Invalid city name</p>
     </div>
     <div class="weather">
-        <img src="./images/icons8-partly-cloudy-day-48.png"  class="weather-icon">
+        <img src="icons8-partly-cloudy-day-48.png"  class="weather-icon">
         <h1 class="temp">20°C</h1>
         <h2 class="city">London</h2>
         <div class="details">
@@ -58,14 +58,14 @@ async function checkWeather(city){
 
     }else{
         if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "./images/cloudy-day.png"
+        weatherIcon.src = "cloudy-day.png"
 
     }
     else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "./images/sun.png"
+        weatherIcon.src = "sun.png"
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "./images/storm.png"
+        weatherIcon.src = "storm.png"
     }
 
     document.querySelector(".weather").style.display = "block";
@@ -83,14 +83,14 @@ async function checkWeather(city){
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
     if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "./images/cloudy-day.png"
+        weatherIcon.src = "cloudy-day.png"
 
     }
     else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "./images/sun.png"
+        weatherIcon.src = "sun.png"
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "./images/storm.png"
+        weatherIcon.src = "storm.png"
     }
 
     document.querySelector(".weather").style.display = "block";
